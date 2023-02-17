@@ -1,8 +1,18 @@
+import { AppBar, Toolbar } from '@mui/material'
 import React from 'react'
+import Logo  from "../../Assets/spacex.svg";
 
-const AppbarDesktop = ({matches}) => {
+
+const AppbarDesktop = () => {
   return (
-    <div>AppbarDesktop</div>
+  <>
+  <AppBar sx={{background:'#000000'}}>
+    <Toolbar>
+    <img src={Logo} alt="SpaceX" width='30%' height='auto' />
+    </Toolbar>
+  </AppBar>
+  <Toolbar />
+  </>
   )
 }
 
